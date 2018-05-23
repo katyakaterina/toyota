@@ -1,0 +1,178 @@
+.option{
+    height: 1597px;
+    background-image: url(../img/decoration/bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    
+    &__special{
+        text-align: center;
+        margin-top: 99px;
+        @include title_L;
+        @include underline;
+        &::before{
+            left: 48%; 
+        }
+    }
+    &__box{
+        display: flex;
+        width: 1220px;
+        height: 437px;
+        margin: 0 auto;
+
+    }
+    &__offer{
+        width: 340px;
+        height: 435px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 30px;
+        box-shadow: 0px 3px 8px 0px rgba(0,0,0,0.1);
+        &--center{
+            background-image: url(../img/decoration/mount.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    }
+    &__subtitle{
+        font-family: 'Toyota Display';
+        font-weight: 400;
+        font-size: 24px;
+        line-height: calc(36/24);
+        text-align: center;
+        color: $toyota_gray;
+        margin: 0;
+        align-self: center;
+        @include underline;
+        &::before{
+          width: 50px;
+        left: 0;  
+        }
+        &--center{
+            color: $toyota_white;
+            font-weight: 400;
+        }
+        &--center{
+            &::before{
+                background-color: transparent;
+            }
+        }
+        
+        
+        
+    }
+    &__discount{
+        font-family: 'Toyota Display';
+        font-size: 24px;
+        line-height: calc(34/24);
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $toyota_gray;
+        align-self: center;
+        display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+    flex-grow: 1;
+    &--center{
+        color: $toyota_white;
+        font-weight: 400;
+    }
+  
+    }
+    &__bold{
+        font-size: 50px;
+    }
+    &__extra{
+        display: block;
+        font-size: 16px;
+        line-height: calc(24/16);
+        width: 177px;
+        margin-left: 30px;
+        flex-grow: 1;
+        color: $toyota_gray;
+        &--center{
+            color: $toyota_white;
+        }
+    }
+    &__trade{
+        height: 668px;
+    width: 520px;
+    float: right;
+    margin-right: 359px;
+    background-color: rgba(0,0,0,0.5);
+    color: $toyota_white;
+    display: flex;
+    flex-direction: column;
+       
+
+        
+    }
+    &__btn{
+        @include link;
+        padding: 17px 42px 17px 42px;
+    align-self: center;
+    &--center{
+        border: 2px solid;
+        padding: 12px 38px 14px 40px;
+        background-color: transparent;
+    }
+    }
+    &__title{
+        @include title_L;
+        color: $toyota_white;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    &__list{
+        width: 371px;
+        height: 353px;
+        margin: 0 auto;
+    }
+    &__name{
+        font-family: 'Toyota Display';
+        font-size: 18px;
+        line-height: 2;
+        font-weight: 700;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: -34px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: $toyota_red;
+        }
+    }
+    &__descr{
+        font-size: 16px;
+        line-height: calc(21/16);
+        margin: 0;
+        position: relative;
+        &::before{
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: -28px;
+            width: 3px;
+            height: 44px;
+            background-image: url(../img/decoration/dots.png);
+        }
+        
+    }
+    &__calc{
+        font-family: 'Toyota Display';
+        font-size: 24px;
+        line-height: calc(30/24);
+        text-align: center;
+        width: 422px;
+        align-self: center;
+    }
+    &__background{
+        background: linear-gradient(to bottom, $toyota_white, transparent);
+        height: 300px;
+    }
+
+}

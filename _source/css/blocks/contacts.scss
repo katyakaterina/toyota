@@ -1,0 +1,83 @@
+.contacts {
+    height: 660px;
+    margin: 0 auto;
+    &__title {
+        @include title_L;
+        @include underline;
+        text-align: center;
+        &::before {
+            left: 48%;
+        }
+    }
+    &__box {
+        display: flex;
+        width: 1220px;
+        justify-content: space-around;
+        margin: 0 auto;
+        height: 182px;
+    }
+    &__call {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background: url(../img/decoration/sprites.png);
+            background-position: -10px -10px;
+            top: 0;
+            left: -62px;
+        }
+    }
+    &__address-box {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 45px;
+            height: 50px;
+            background: url(../img/decoration/sprites.png);
+            background-position: -10px -80px;
+            top: 0;
+            left: -62px;
+        }
+    }
+    &__table {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url(../img/decoration/sprites.png);
+            background-position: -80px -10px;
+            top: 0;
+            left: -62px;
+        }
+    }
+    &__subtitle {
+        font-family: 'Toyota display';
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 700;
+        color: $toyota_gray;
+        margin: 0 0 30px 0;
+    }
+    &__link {
+        font-size: 24px;
+        color: $toyota_gray;
+        border-bottom: 1px solid;
+    }
+    &__address,
+    &__timetable {
+        font-size: 24px;
+        line-height: calc(30/24);
+        font-weight: 400;
+        width: 244px;
+        color: $toyota_gray;
+    }
+}
+#map {
+    height: 400px;
+}

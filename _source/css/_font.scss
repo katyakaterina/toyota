@@ -1,0 +1,62 @@
+@font-face {
+ 	font-display: swap;
+ 	font-family: 'Toyota Display';
+	 src: url('../font/Toyta Display Bold.woff') format('woff'), 
+	 url('../font/Toyota Display Bold.eot') format('embedded-opentype'), 
+	 url('../font/Toyota Display Bold.otf') format('opentype'), 
+	 url('../font/Toyota Display Bold.ttf') format('truetype');
+ 	font-weight: 700;
+ 	font-style: normal;
+ }
+
+@font-face {
+ 	font-display: swap;
+ 	font-family: 'Toyota Display';
+	 src: url('../font/Toyota Display.woff') format('woff'), 
+	 url('../font/Toyota Display.eot') format('embedded-opentype'), 
+	 url('../font/Toyota Display.otf') format('opentype'), 
+	 url('../font/Toyota Display.ttf') format('truetype');
+ 	font-weight: 400;
+ 	font-style: normal;
+ }
+
+@font-face{
+	font-display: swap;
+	font-family: 'Toyota Text';
+	src: url('../font/Toyota Text.woff') format('woff'),
+	url('../font/Toyota Text.eot') format('embedded-opentype'),
+	url('../font/Toyota Text.otf') format('opentype'),
+	url('../font/Toyota Text.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-display: swap;
+	font-family: 'Toyota Text';
+	src: url('../font/Toyota Text Bold.woff') format('woff'),
+	url('../font/Toyota Text Bold.eot') format('embedded-opentype'),
+	url('../font/Toyota Text Bold.otf') format('opentype'),
+	url('../font/Toyota Text Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-display: swap;
+	font-family: 'Toyota Text';
+	src: url('../font/Toyota Text Bold Italic.woff') format('woff'),
+	url('../font/Toyota Text Bold Italic.eot') format('embedded-opentype'),
+	url('../font/Toyota Text Bold Italic.otf') format('opentype'),
+	url('../font/Toyota Text Bold Italic.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+}
+@font-face{
+	font-display: swap;
+	font-family: 'Toyota Text';
+	src: url('../font/Toyota Text Italic.woff') format('woff'),
+	url('../font/Toyota Text Italic.eot') format('embedded-opentype'),
+	url('../font/Toyota Text Italic.otf') format('opentype')
+	url('../font/Toyota Text Italic.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+}

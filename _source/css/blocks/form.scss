@@ -1,0 +1,146 @@
+.modal {
+    display: none;
+    width: 503px;
+    background-color: $toyota_white;
+    color: $toyota_gray;
+    margin: 0 auto;
+    position: fixed;
+    top: 30%;
+    left: 42%;
+    border: 1px solid $toyota_gray;
+    z-index: 5;
+
+    &__inner {
+        height: 503px;
+        width: 503px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        &--cost {
+            height: 433px;
+        }
+        &--special {
+            height: 453px;
+        }
+        &--drive {
+            height: 488px;
+        }
+    }
+    &__title {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        @include underline;
+        &::before {
+            top: 125%;
+            left: 42%;
+        }
+    }
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 400;
+        width: 320px;
+        text-align: center;
+        margin: 0 auto;
+        &--cost {
+            width: 504px;
+        }
+        &--drive {
+            width: 504px;
+        }
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 345px;
+        &:nth-child(2) {
+            height: 300px;
+        }
+        &:nth-child(2) {
+            height: 300px;
+        }
+        &:nth-child(3) {
+            height: 300px;
+        }
+    }
+    &__btn {
+        @include link;
+        background-color: $toyota_form;
+        width: 242px;
+        padding: 15px 26px 15px 28px;
+    }
+    &__fieldset {
+        border: none;
+        text-align: center;
+    }
+    &__input {
+        width: 312px;
+        height: 37px;
+        border-radius: 4px;
+        margin: 8px;
+        border: 1px solid $toyota_input;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+        &--car {
+            width: 175px;
+            margin-left: 0;
+        }
+        &--year {
+            width: 100px;
+            margin: 0;
+        }
+        &--month {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                background-image: url(../img/decoration/calendar.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 30px;
+                height: 30px;
+                top: 6%;
+                left: 89%;
+            }
+        }
+    }
+    &__check {
+        display: none;
+    }
+    &__agreement {
+        position: relative;
+        margin-top: 21px;
+        color: $black;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -29px;
+            width: 16px;
+            height: 17px;
+            border: 1px solid $toyota_form;
+        }
+        .modal__check:checked+&::after {
+            position: absolute;
+            content: "";
+            width: 17px;
+            height: 7px;
+            border-top: 3px solid $toyota_form;
+            border-right: 3px solid $toyota_form;
+            top: 0px;
+            left: -26px;
+            transform: rotate(135deg);
+        }
+    }
+    &__link {
+        color: $toyota_gray;
+        border-bottom: 1px solid $toyota_gray;
+    }
+    &__close{
+        @include close;
+        border: none;
+        padding: 0;
+    }
+}

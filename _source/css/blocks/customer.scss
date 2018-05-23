@@ -1,0 +1,53 @@
+.customer {
+    display: flex;
+    justify-content: center;
+    background: $toyota_gray;
+    height: 150px;
+    &__offer {
+        width: 303px;
+        border-left: 1px solid $toyota_customer;
+        border-right: 1px solid $toyota_customer;
+        margin-left: -1px;
+        &--active {
+            background-color: $toyota_red;
+        }
+    }
+    &__box {
+        display: flex;
+        justify-content: space-evenly;
+        width: 255px;
+    }
+    &__number {
+        align-self: center;
+        font-size: 50px;
+        font-weight: 700;
+        order: 1;
+        color: $toyota_customer;
+        &--one {
+            color: $toyota_white;
+        }
+    }
+    &__caption {
+        font-family: 'Toyota Display';
+        font-size: 18px;
+        line-height: calc(24/18);
+        text-transform: uppercase;
+        color: $toyota_white;
+        width: 149px;
+        order: 2;
+        margin: 0;
+        align-self: center;
+    }
+    &__text {
+        margin: 0;
+        font-size: 14px;
+        line-height: calc(18/14);
+        color: $toyota_white;
+        width: 260px;
+        margin: 0 auto;
+        &:nth-child(2) {
+            margin: 0 0 0 21px;
+            width: 230px;
+        }
+    }
+}

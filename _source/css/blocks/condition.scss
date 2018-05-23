@@ -1,0 +1,31 @@
+.condition {
+    height: 510px;
+    background-color: $toyota_bg-light;
+    display: table-cell;
+    min-height: 510px;
+    vertical-align: bottom;
+    width: 1920px;
+    &__inner {
+        width: 1193px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    &__title {
+        font-size: 18px;
+        font-family: 'Toyota Display';
+        margin: 0;
+        color: $toyota_red;
+        @include arrow;
+        &::before {
+            top: 9px;
+            left: 138px;
+            transform: rotate(-45deg);
+        }
+    }
+    &__point {
+        padding-top: 25px;
+        &:last-child {
+            margin-bottom: 47px;
+        }
+    }
+}

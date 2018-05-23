@@ -1,0 +1,16 @@
+.footer{
+    height: 80px;
+    background-color: $toyota_footer;
+    display: table-cell;
+    min-height: 80px;
+    vertical-align: middle;
+    width: 1920px;
+    &__inner{
+        width: 1193px;
+        margin: 0 auto;
+    }
+    &__copyright{
+        color: $toyota_copyright;
+        margin: 0;
+    }
+}

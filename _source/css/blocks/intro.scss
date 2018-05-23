@@ -1,0 +1,48 @@
+.intro {
+    height: 320px;
+    &__progress {
+        background-image: url(../img/decoration/mountain.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &__list {
+        height: 320px;
+        margin: 0;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: space-between;
+        color: $toyota_white;
+        width: 1220px;
+        margin: 0 auto;
+    }
+    &__item {
+        text-align: center;
+        width: 150px;
+        text-transform: uppercase;
+        &:nth-child(2) {
+            width: 100px;
+        }
+        &:nth-child(4) {
+            width: 100px;
+        }
+    }
+    &__bold {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 700;
+        font-family: 'Toyota Display';
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: -30px;
+            width: 24px;
+            height: 24px;
+            border-top: 8px solid $toyota_white;
+            border-right: 8px solid $toyota_white;
+            transform: rotate(-135deg);
+        }
+    }
+}

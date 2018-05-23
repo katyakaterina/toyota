@@ -1,0 +1,64 @@
+.promo {
+    height: 749px;
+    &__slider {
+        height: 749px;
+    }
+    &__slide {
+        width: 1920px;
+        height: 749px;
+        box-shadow: inset 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
+        &--one {
+            background-image: url(../img/content/promo.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            
+        }
+        @media
+            only screen and (min-resolution: 192dpi),
+            only screen and (min-resolution: 2dppx){
+    &--one {
+        background-image: url(../img/content/promo2x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        
+    }
+    &--two {
+        background-image: url(../img/content/promo2-2x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+}
+        
+        &--two {
+            background-image: url(../img/content/promo2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__titles {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1265px;
+        padding-top: 49px;
+        margin: 0 auto;
+    }
+    &__headline,
+    &__caption {
+        font-size: 60px;
+        color: $toyota_gray;
+        margin: 0;
+        &--two{
+            color: $toyota_white;
+        }
+    }
+    &__caption {
+        text-transform: uppercase;
+        font-weight: 400;
+        &--two{
+            color: $toyota_white;
+        }
+    }
+
+}

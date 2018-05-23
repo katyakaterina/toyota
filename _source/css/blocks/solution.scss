@@ -1,0 +1,87 @@
+.solution {
+    height: 775px;
+    background-image: url(../img/decoration/fortuner-solution.png);
+    background-repeat: no-repeat;
+    background-position: 195% 40%;
+    &__title {
+        @include title_L;
+        line-height: calc(40/32);
+        @include underline;
+        &::before {
+            top: 86px;
+            left: 0;
+        }
+    }
+    &__proposal {
+        width: 352px;
+        font-size: 18px;
+        line-height: calc(34/18);
+    }
+    &__inner {
+        height: 775px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 1220px;
+        margin: 0 auto;
+        color: $toyota_gray;
+    }
+    &__list {
+        font-family: 'Toyota Display';
+        font-weight: 700;
+        padding: 0;
+    }
+    &__item {
+        padding: 25px 76px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            top: 10px;
+            left: 0;
+            background-color: $toyota_red;
+        }
+        &:nth-child(1)::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/decoration/car1.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 36px;
+            height: 28px;
+            top: 19px;
+            left: 7px;
+        }
+        &:nth-child(2)::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/decoration/car2.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 36px;
+            height: 28px;
+            top: 19px;
+            left: 7px;
+        }
+        &:nth-child(3)::after {
+            content: "";
+            position: absolute;
+            background-image: url(../img/decoration/man.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 36px;
+            height: 28px;
+            top: 19px;
+            left: 7px;
+        }
+    }
+    &__btn {
+        @include link;
+        padding: 17px 37px 17px 37px;
+        margin-top: 23px;
+    }
+}

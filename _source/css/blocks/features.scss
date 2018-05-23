@@ -1,0 +1,167 @@
+.features {
+    height: 1145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__title {
+        @include title_L;
+        @include underline;
+        &::before {
+            left: 112px;
+        }
+        &--stopwatch {
+            text-align: center;
+            &::before {
+                left: 46%;
+            }
+        }
+    }
+    &__subtitle {
+        font-size: 16px;
+        color: $toyota_gray;
+        margin: 0;
+    }
+    &__box {
+        display: flex;
+        width: 1220px;
+        justify-content: space-between;
+        height: 160px;
+        align-items: center;
+    }
+    &__trate {
+        width: 290px;
+        &:nth-child(2) {
+            order: 3;
+        }
+        &:nth-child(3) {
+            order: 5;
+        }
+        &:nth-child(4) {
+            order: 2;
+        }
+        &:nth-child(5) {
+            order: 4;
+        }
+        &:nth-child(6) {
+            order: 6;
+        }
+    }
+    &__descr {
+        font-family: 'Toyota Display';
+        font-size: 24px;
+        line-height: calc(36/24);
+        color: $toyota_gray;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: -21px;
+            width: 3px;
+            height: 30px;
+            background-image: url(../img/decoration/dots.png);
+        }
+        &--medal {
+            width: 170px;
+            &::before {
+                content: '';
+                display: block;
+                width: 26px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -125px -64px;
+                position: absolute;
+                top: 5px;
+                left: -63px;
+            }
+        }
+        &--storage {
+            width: 175px;
+            &::before {
+                content: '';
+                display: block;
+                width: 35px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -70px -10px;
+                position: absolute;
+                top: 5px;
+                left: -63px;
+            }
+            &::after{
+                left: -15px;
+            }
+        }
+        &--person {
+            width: 198px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 30px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -125px -10px;
+                top: 5px;
+                left: -63px;
+            }
+            &::after{
+                left: -15px;
+            }
+        }
+        &--gift {
+            width: 250px;
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 33px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -64px -64px;
+                top: 5px;
+                left: -63px;
+            }
+        }
+        &--bank {
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 34px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -10px -64px;
+                top: 5px;
+                left: -63px;
+            }
+            &::after{
+                left: -15px;
+            }
+        }
+        &--change {
+            &::before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 40px;
+                height: 34px;
+                background: url(../img/decoration/css_sprites.png);
+                background-position: -10px -10px;
+                top: 5px;
+                left: -63px;
+            }
+            &::after{
+                left: -12px;
+            }
+        }
+    }
+    &__time{
+        background-image: url(../img/decoration/time.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1133px;
+  height: 600px;
+  margin-top: 65px;
+    }
+}

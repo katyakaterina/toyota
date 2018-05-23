@@ -1,0 +1,101 @@
+.catalog {
+    width: 1220px;
+    height: 1846px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    &__title {
+        @include title_L;
+        text-align: center;
+        @include underline;
+    }
+    &__card {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    &__right {
+        align-self: center;
+    }
+    &__inner {
+        display: flex;
+        width: 720px;
+        height: 250px;
+        justify-content: space-around;
+        background: $toyota_light;
+    }
+    &__caption {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 700;
+        color: $toyota_gray;
+        margin: 20px 0 27px 0;
+    }
+    &__list {
+        padding: 0;
+        margin: 0;
+    }
+    &__item {
+        font-size: 18px;
+        line-height: calc(30/18);
+        color: $toyota_gray;
+    }
+    &__price {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $toyota_gray;
+    }
+    &__bold {
+        font-family: 'Toyota Display';
+        font-size: 24px;
+        line-height: 1;
+        font-style: normal;
+        color: $toyota_red;
+        padding-left: 7px;
+        text-transform: lowercase;
+        &--tell {
+            font-family: 'Toyota Text';
+            font-size: 18px;
+            font-style: normal;
+            color: $toyota_gray;
+            font-weight: 700;
+        }
+    }
+    &__more {
+        font-size: 16px;
+        color: $toyota_customer;
+        margin-bottom: 35px;
+    }
+    &__btn {
+        @include link;
+    }
+    &__link {
+        color: $toyota_red;
+        font-family: 'Toyota Display';
+        margin: 60px;
+        align-self: center;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 113px;
+            width: 8px;
+            height: 8px;
+            border-top: 2px solid $toyota_red;
+            border-right: 2px solid $toyota_red;
+            transform: rotate(135deg);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 24px;
+            left: 0;
+            width: 107px;
+            height: 2px;
+            background-color: $toyota_red;
+        }
+    }
+}

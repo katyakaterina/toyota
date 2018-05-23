@@ -1,0 +1,181 @@
+.model-range {
+    background-image: url(../img/decoration/fortuners-bg.png);
+    background-size: 50% 100%;
+    background-position: 100% 62px;
+    background-repeat: no-repeat;
+    &__list {
+        display: flex;
+        margin: 0 auto;
+        height: 100px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0;
+        box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+    &__item {
+        align-self: baseline;
+        font-size: 18px;
+        font-weight: 700;
+        color: $toyota_gray;
+        position: relative;
+        padding: 39px;
+        &--line {
+            flex-basis: 115px;
+            text-align: center;
+            align-self: flex-start;
+            padding: 38px 15px 20px 15px;
+        }
+        &--active {
+            background-color: $toyota_red;
+            color: $toyota_white;
+        }
+    }
+    &__name {
+        align-self: flex-start;
+        background: url(../img/decoration/red-cloud.png);
+        background-repeat: no-repeat;
+        background-position: -2px -1%;
+        margin-top: 66px;
+        display: flex;
+        flex-direction: column;
+        height: 191px;
+        flex-wrap: wrap;
+    }
+    &__title {
+        font-size: 32px;
+        font-weight: 700;
+        color: $toyota_white;
+        width: 241px;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+    &__subtitle {
+        font-size: 24px;
+        line-height: 1;
+        margin: 0;
+        align-self: flex-start;
+        padding-left: 20px;
+    }
+    &__item:hover {
+        cursor: pointer;
+    }
+    &__content {
+        display: block;
+        width: 1220px;
+        height: 718px;
+        margin: 0 auto;
+        background-image: url(../img/content/fortuner.png);
+        background-position: right 61%;
+        background-repeat: no-repeat;
+    }
+    &__hot {
+        text-align: right;
+        width: 334px;
+        margin: 35px auto;
+        height: 68px;
+        transform: skew(-20deg);
+        background: linear-gradient( $toyota_red, #b20000);
+    }
+    &__cost {
+        transform: skew(20deg);
+        width: 212px;
+        text-align: left;
+        margin: 10px auto;
+        color: $toyota_white;
+        font-size: 18px;
+    }
+    &__benefits {
+        font-family: 'Toyota Display';
+        display: flex;
+        flex-direction: column;
+        height: 320px;
+        width: 389px;
+        flex-wrap: wrap;
+        color: $toyota_gray;
+        text-transform: uppercase;
+    }
+    &__benefit {
+        font-size: 12px;
+        font-weight: 700;
+        position: relative;
+        width: 170px;
+        margin: 20px;
+        &:nth-child(1) {
+            order: 1;
+        }
+        &:nth-child(2) {
+            order: 4;
+            white-space: pre-line;
+        }
+        &:nth-child(3) {
+            order: 2;
+        }
+        &:nth-child(4) {
+            width: 278px;
+            white-space: pre-line;
+            order: 4;
+        }
+        &:nth-child(5) {
+            width: 278px;
+            white-space: pre-line;
+            order: 3;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: -7px;
+            left: 0px;
+            width: 50px;
+            height: 3px;
+            background-color: $toyota_customer;
+        }
+    }
+    &__bold {
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    &__car {
+        align-self: center;
+        flex-grow: 2;
+        text-align: right;
+        order: 4;
+    }
+    &__chance {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    &__btn {
+        @include link;
+        padding: 20px 50px 20px 50px;
+        border-radius: 30px;
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 1;
+        color: $toyota_red;
+        border-bottom: 2px solid;
+        align-self: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 24px;
+            height: 24px;
+            top: -3px;
+            left: -40px;
+            background-image: url(../img/decoration/wheel.png);
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+    &__rate {
+        font-size: 16px;
+        align-self: flex-end;
+        border-bottom: 2px dotted $toyota_red;
+    }
+}
